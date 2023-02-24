@@ -9,9 +9,9 @@ const flower = document.getElementById("flower")
 //    }
 //})
 
-if (window.innerHeight > 900 && window.scrollY === 700) {
+if (window.innerHeight > 900 && window.scrollY > 700) {
      flower.style.animationName = "flower"
-} else if (window.innerHeight < 900 && window.scrollY === 400) {
+} else if (window.innerHeight < 900 && window.scrollY < 400) {
     flower.style.animationName = "flower"
 }
     
