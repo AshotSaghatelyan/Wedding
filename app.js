@@ -4,7 +4,7 @@ const playAnimationDiv = document.getElementById("playAnimationDiv")
 const flower = document.getElementById("flower")
 
 window.addEventListener("scroll", () => {
-   if (window.scrollY > 500) {
+   if (window.scrollY > 300) {
        flower.style.animationName = "flower"
    }
 })
