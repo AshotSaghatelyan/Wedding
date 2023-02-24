@@ -3,18 +3,11 @@
 const playAnimationDiv = document.getElementById("playAnimationDiv")
 const flower = document.getElementById("flower")
 
-//window.addEventListener("scroll", () => {
-//    if (window.scrollY > 700) {
-//        flower.style.animationName = "flower"
-//    }
-//})
-
-if (window.innerHeight > 900 && window.scrollY > 700) {
-     flower.style.animationName = "flower"
-} else if (window.innerHeight < 900 && window.scrollY > 500) {
-    flower.style.animationName = "flower"
-}
-    
+window.addEventListener("scroll", () => {
+   if (window.scrollY > 500) {
+       flower.style.animationName = "flower"
+   }
+})
 
 ///////////////////////////////////////////////
 
