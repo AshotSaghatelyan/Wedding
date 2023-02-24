@@ -3,62 +3,20 @@
 const playAnimationDiv = document.getElementById("playAnimationDiv")
 const flower = document.getElementById("flower")
 
-window.addEventListener("scroll", () => {
-    if (window.scrollY > 700) {
-        flower.style.animationName = "flower"
-    }
-})
+//window.addEventListener("scroll", () => {
+//    if (window.scrollY > 700) {
+//        flower.style.animationName = "flower"
+//    }
+//})
+
+if (window.innerHeight > 900 && window.scrollY === 700) {
+     flower.style.animationName = "flower"
+} else if (window.innerHeight < 900 && window.scrollY === 400) {
+    flower.style.animationName = "flower"
+}
+    
 
 ///////////////////////////////////////////////
-
-
-
-// const time = document.getElementById("time");
-// let weddingDay = new Date("2023-01-25T17:00:00").toLocaleString()
-// console.log(weddingDay);
-// let day = weddingDay.getDate();
-// let hours = weddingDay.getMonth();
-// let minuts = 59;
-// let seconds = 60;
-
-// let nowDate = new Date().toLocaleString()
-// console.log(nowDate);
-
-
-// let end = new Date('04/20/2023 15:30 AM');
-// console.log(new Date());
-//     console.log(end);
-//     let _second = 1000;
-//     let _minute = _second * 60;
-//     let _hour = _minute * 60;
-//     let _day = _hour * 24;
-//     let timer;
-
-//     function showRemaining() {
-//         let now = new Date();
-//         let distance = end - now;
-//         if (distance < 0) {
-//             clearInterval(timer);
-//             // document.getElementById('countdown').innerHTML = 'EXPIRED!';
-
-//             return;
-//         }
-//         let days = Math.floor(distance / _day);
-//         let hours = Math.floor((distance % _day) / _hour);
-//         let minutes = Math.floor((distance % _hour) / _minute);
-//         let seconds = Math.floor((distance % _minute) / _second);
-
-//         // console.log('day', days,'hour', hours, minutes, seconds);
-
-//         // document.getElementById('countdown').innerHTML = days + 'days ';
-//         // document.getElementById('countdown').innerHTML += hours + 'hrs ';
-//         // document.getElementById('countdown').innerHTML += minutes + 'mins ';
-//         // document.getElementById('countdown').innerHTML += seconds + 'secs';
-//     }
-
-//     timer = setInterval(showRemaining, 1000);
-
-
 
 
 let end = new Date('04/20/2023 15:30');
